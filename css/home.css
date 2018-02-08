@@ -1,0 +1,67 @@
+body{
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Palette
+
+indigo
+indigo lighten-2
+ blue-grey darken-4
+ blue-grey darken-3
+ orange accent-1
+orange accent-2
+
+*/
+
+a{
+    color:white;
+}
+
+#modal1, #modal2{
+text-align: center;
+font-size: 15pts;
+}
+
+.activator{
+   width: 100px;
+}
+    
+.brand-logo > img{
+    width:60px;
+}
+
+.center{
+    margin: auto;
+  }   
+
+.nav-extended {
+    margin-bottom: 0px;
+    padding: 30px 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+    height: 350px;
+    background-color: 
+}
+
+.parallax-container {
+    height: 250px;
+}
+
+.popu{
+    margin: 3%;
+    box-shadow:0 0 5px 5px #DDDDDD;
+}
+
+.side-nav{
+    text-align: center;
+}
+
+.space{
+    height: 30px;
+}
+
+
+
+

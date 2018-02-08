@@ -24,6 +24,7 @@ var config = {
       var token = result.credential.accessToken;
       // The signed-in user info.
       var user = result.user;
+      window.location.href = 'views/home.html';
       console.log(result);
       // ...
     }).catch(function(error) {
@@ -38,3 +39,28 @@ var config = {
       // ...
     });
   }
+
+
+
+  function pintarNombreFoto() {
+    firebase.auth().onAuthStateChanged(function(user) {
+      var $photoProfile = $('#photo');
+      var $nameUsers = $('#name');
+      var $usersComment = $('.name-comment');
+      
+        if (user) {
+            var displayName = user.displayName;
+            var photoURL = user.photoURL;
+           
+            var isAnonymous = user.isAnonymous;
+            var uid = user.uid;
+            
+            $photoProfile.attr('src', photoURL);
+            $nameUsers.text(displayName);
+            $usersComment.text(displayName);
+            
+        }
+    });
+  }
+  pintarNombreFoto();
+  
